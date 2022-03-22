@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import LDJS from './LDJS.js';
+import LDReact from './LDReact.js';
 
 function App() {
   return (
@@ -9,14 +11,12 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        {/* Only use one of these on the page, as only one will receive updates.
+        You should only have one instance of the LD SDK (ldClient). */}
+        
+        <LDJS />
+        <LDReact />
+        
       </header>
     </div>
   );
