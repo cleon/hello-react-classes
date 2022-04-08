@@ -50,9 +50,9 @@ class LDJS extends React.Component {
         return (
             <section>
                 <h1>LDJS.js<br />Uses the LaunchDarkly Javascript SDK</h1>
-                <button onClick={this.track1Click}>Select from FF JSON (track1)</button>
+                <button onClick={this.track1Click}>Get JSON flag (track1)</button>
                 <br />
-                <button onClick={this.track2Click}>Select from FF JSON (track2)</button>
+                <button onClick={this.track2Click}>Get JSON Flag (track2)</button>
             </section>
         );
     }
