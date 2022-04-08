@@ -98,4 +98,6 @@ Serve: a percentage rollout:<br>
 Advanced: By `requestKey`<br>
 
 5. Run `npm install` in the root dir of this repo
-6. Run `npm run start` to run the app
+
+# Running the app
+1. Run `npm run start` from the root dir to run the app
