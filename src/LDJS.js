@@ -24,7 +24,7 @@ class LDJS extends React.Component {
             const user = {
                 key: 'anon',
                 custom: {
-                    requestKey: Math.floor(Math.random()*Date.now()),
+                    requestKey: Math.floor(Math.random() * Date.now()),
                     trackName: track
                 }
             }
@@ -37,10 +37,11 @@ class LDJS extends React.Component {
 
             //randomly select a city from returned array:
             const city = cities[Math.floor(Math.random() * cities.length)];
-            const message = `Selection: ${city}`;
+            alert(`Selection: ${city}`);
 
-            alert(message);
-
+            const metric = 'citySelection';
+            LD.track(metric, { city: city });
+            LD.flush();
         } catch (e) {
             console.error('Error:', e);
         }
