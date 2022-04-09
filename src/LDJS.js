@@ -33,11 +33,11 @@ class LDJS extends React.Component {
 
             const flagKey = 'cities-flag';
             const cities = LD.variation(flagKey).cities;
-            alert(`${user.custom.trackName}: ${cities}`);
+            //alert(`${user.custom.trackName}: ${cities}`);
 
             //randomly select a city from returned array:
             const city = cities[Math.floor(Math.random() * cities.length)];
-            alert(`Selection: ${city}`);
+            //alert(`Selection: ${city}`);
 
             const metric = 'citySelection';
             LD.track(metric, { city: city });
